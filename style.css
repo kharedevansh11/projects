@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    background-color: bisque;
+
+}
+
+/* .container{ */
+   
+h1{
+    transform: translateY(10px);
+
+    font-family: 'Bacasime Antique', serif;
+    font-size: 80px;
+}
+h2{
+    transform: translateY(30px);
+
+    font-family: 'Bacasime Antique', serif;
+    font-size: 50px;
+
+}
+
+.box{
+    transform: translateY(50px);
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 20px;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 10px;
+
+}
+
+#red{
+    background-color: red;
+}
+#blue{
+    background-color: blue;
+}
+#green{
+    background-color: green;
+}
+#yellow{
+    background-color: yellow;
+}
+
+.game-over{
+    
+        /* -webkit-animation: infinite;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-fill-mode: both; */
+        /* animation: flash  5s  1s infinite  ; */
+        animation:flash 1s infinite ;
+      
+}
+@keyframes flash {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+      background-color: red;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
